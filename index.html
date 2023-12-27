@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Espacial</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div id="intro">
+    <h1>Bem-vindo à Exploração Espacial</h1>
+    <p>Prepare-se para uma jornada incrível no nosso Sistema Solar.</p>
+    <button onclick="iniciarExploracao()">Iniciar Exploração</button>
+</div>
+
+<div id="conteudo" style="display: none;">
+    <div id="pagina1">
+        <h2>Descubra o Sistema Solar</h2>
+        <p>O sistema solar compreende o conjunto constituído pelo Sol e todos os corpos celestes que estão sob seu domínio gravitacional.
+           O Sol ocupa 99,85% da massa total. Incrível, não?</p>
+        <div class="sol planeta"></div>
+        <div class="mercurio planeta"></div>
+        <div class="venus planeta"></div>
+        <div class="terra planeta"></div>
+        <div class="marte planeta"></div>
+        <div class="jupiter planeta"></div>
+        <div class="saturno planeta"></div>
+        <div class="urano planeta"></div>
+        <div class="neptuno planeta"></div>
+        <button onclick="mostrarPagina('pagina2')">Viajar até Mercúrio</button>
+    </div>
+
+    <div id="pagina2" style="display: none;">
+        <h2>Viagem a Mercúrio</h2>
+        <p>Mercúrio é o menor e mais interno planeta do Sistema Solar.
+           Apenas 1 dia na Terra equivale a 59 dias em Mercúrio.</p>
+        <div id="circleContainer">
+            <div class="circle"></div>
+        </div>
+        <button onclick="mostrarPagina('pagina3')">Viajar até Vénus</button>
+    </div>
+
+    <div id="pagina3" style="display: none;">
+        <h2>Viagem a Vénus</h2>
+        <p>Vénus tem ventos que sopram a velocidades incrivelmente altas, em média 300 km/h. É o planeta com o dia mais longo do Sistema Solar, durando cerca de 243 dias terrestres.</p>
+        <button onclick="mostrarPagina('pagina4')">Viajar até à Terra</button>
+        <div id="circleContainer1">
+            <div class="circle1"></div>
+        </div>
+    </div>
+
+    <div id="pagina4" style="display: none;">
+        <h2>Viagem à Terra</h2>
+        <p> Em sua viagem ao redor do Sol, o planeta recebe grandes quantidades de lixo estelar, desde pequenos asteroides até pó cósmico. Ao todo, a cada dia caem de 20 a 40 toneladas desse material na Terra.</p>
+        <button onclick="mostrarPagina('pagina5')">Viajar até Marte</button>
+        <div id="circleContainer2">
+            <div class="circle2"></div>
+        </div>
+    </div>
+
+    <div id="pagina5" style="display: none;">
+      <h2>Viagem a Marte</h2>
+      <p>O planeta possui o maior vulcão de todo o nosso sistema, uma superfície vermelha, e até estações como verão e inverno.</p>
+      <button onclick="mostrarPagina('pagina6')">Viajar até Júpiter</button>
+      <div id="circleContainer3">
+          <div class="circle3"></div>
+      </div>
+    </div>
+
+    <div id="pagina6" style="display: none;">
+      <h2>Viagem a júpiter</h2>
+      <p>Júpiter tem 80 luas, algumas sem nome, e formam uma espécie de sistema solar em miniatura.
+        Júpiter tem tempestades constantes e é o planeta com o dia mais curto do sistema solar.
+      </p>
+      <button onclick="mostrarPagina('pagina7')">Viajar até saturno</button>
+      <div id="circleContainer4">
+          <div class="circle4"></div>
+      </div>
+    </div>
+
+    <div id="pagina7" style="display: none;">
+      <h2>Viagem a saturno</h2>
+      <p>Saturno dispõe de 7 conjuntos de anéis circundantes e 82 luas.
+        É o sexto planeta, a partir do Sol, e é o segundo maior planeta do Sistema Solar, suas dimensões são 9 vezes maiores que as da Terra.
+      </p>
+      <button onclick="mostrarPagina('pagina8')">Viajar até urano</button>
+      <div id="circleContainer5">
+          <div class="circle5"></div>
+      </div>
+    </div>
+
+    <div id="pagina8" style="display: none;">
+      <h2>Viagem a urano</h2>
+      <p>Seu nome foi dado em homenagem a Urano, o deus grego do céu; Um dia em Urano, dura 17 horas e 14 minutos. É o único planeta do Sistema Solar que gira 90° em relação ao plano de sua órbita.
+      </p>
+      <button onclick="mostrarPagina('pagina9')">Viajar até neptuno</button>
+      <div id="circleContainer6">
+          <div class="circle6"></div>
+      </div>
+    </div>
+
+    
+    <div id="pagina9" style="display: none;">
+      <h2>Viagem a neptuno</h2>
+      <p>A associação foi feita em função da cor azulada que o planeta exibe. É o quarto maior planeta do Sistema Solar.
+        O campo magnético de Netuno é 27 vezes mais intenso que o da Terra.
+      </p>
+      <button onclick="mostrarPagina('pagina10')">Fim de viagem!</button>
+      <div id="circleContainer7">
+          <div class="circle7"></div>
+      </div>
+    </div>
+
+    <div id="pagina10" style="display: none;">
+      <h2>Fim de Viagem!</h2>
+      <p>Concluindo nossa incrível jornada pelo Sistema Solar, somos lembrados de que, embora estejamos enraizados na Terra, temos a liberdade de explorar os confins do universo.
+         Ao contemplar as maravilhas celestiais, percebemos que somos feitos da mesma matéria das estrelas. Que esta viagem desperte em nós a curiosidade eterna e a compreensão de que somos todos viajantes em um império cósmico. 
+         Até à próxima viagem intergaláctica!
+      </p>
+      <button onclick="mostrarPagina('intro')">Início da viagem!</button>
+      
+      </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+ 

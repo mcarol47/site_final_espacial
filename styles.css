@@ -1,0 +1,216 @@
+
+@media only screen and (max-width: 600px) {
+
+}
+
+#intro {
+  text-align: center;
+  align-items: center;
+  margin: 40px;
+  font-size: 40px;
+  color: rgb(81, 176, 227);
+  animation: introAnimation 2s ease-in-out, fadeInContent 2s ease-in-out;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+#conteudo,
+#pagina2,
+#pagina3,
+#pagina4,
+#pagina5,
+#pagina6,
+#pagina7,
+#pagina8,
+#pagina9{
+  text-align: center;
+  margin: 40px;
+  font-size: 25px;
+  color: rgb(154, 151, 146);
+  animation: fadeInContent 2s ease-in-out;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+#pagina10 {
+  align-items: center;
+  font-size: 35px;
+  color: rgb(81, 176, 227);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: fadeInContent 2s ease-in-out;
+}
+
+#intro {
+  animation: introAnimation 2s ease-in-out;
+  text-shadow: 0 0 10px #f5f5dc;
+}
+
+@keyframes introAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotateX(90deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2) rotateX(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateX(0deg);
+  }
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #010d1a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  background-image: url(https://img.freepik.com/vetores-premium/ceu-noturno-escuro-estrelado-com-estrelas-brilhantes_250841-315.jpg);
+}
+
+.sol {
+  background: radial-gradient(circle, yellow, orange, red);
+  box-shadow: 0 0 50px rgba(255, 165, 0, 0.8);
+}
+
+.planeta {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.mercurio {
+  background-color: tan;
+  width: 20px;
+  height: 20px;
+}
+
+.venus {
+  background-color: orange;
+  width: 35px;
+  height: 35px;
+}
+
+.terra {
+  background-color: blue;
+  width: 25px;
+  height: 25px;
+}
+
+.marte {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.jupiter {
+  background-color: rgb(173, 216, 230);
+  width: 50px;
+  height: 50px;
+}
+
+.saturno {
+  background-color: #f5f5dc;
+  width: 50px;
+  height: 50px;
+}
+
+.urano {
+  background-color: #7fdbff;
+  width: 40px;
+  height: 40px;
+}
+
+.neptuno {
+  background-color: #000080;
+  width: 40px;
+  height: 40px;
+}
+
+#circleContainer,
+#circleContainer1,
+#circleContainer2,
+#circleContainer3,
+#circleContainer4,
+#circleContainer5,
+#circleContainer6,
+#circleContainer7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle,
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6,
+.circle7 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.circle {
+  background-image: url(https://cdn.pixabay.com/photo/2020/02/04/17/08/map-4818866_960_720.jpg);
+  background-size: cover;
+}
+
+.circle1 {
+  background: radial-gradient(#ff8c00, brown);
+  background-image: url(https://nasa3d.arc.nasa.gov/shared_assets/images/ven0aaa2/ven0aaa2-copy-428-321.jpg);
+  background-size: cover;
+}
+
+.circle2 {
+  background-image: url(https://ogimg.infoglobo.com.br/in/21782391-6ba-5a6/FT1086A/extra_large-1504279459-cover-image.JPG);
+  background-size: cover;
+}
+
+.circle3 {
+  background-image: url(https://media.istockphoto.com/id/488156684/photo/alien-planet-with-craters-4.webp?b=1&s=170667a&w=0&k=20&c=0YRjM4t9hKBM17wlf8nunyPDJyBhqkqgxXcb00Kbdhs=);
+  background-size: cover;
+}
+
+.circle4 {
+  background-image: url(https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/01jupiterredspot.jpg?w=1900&h=844);
+  background-size: cover;
+}
+
+.circle5 {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/58d3c051-62a0-4471-818b-b9b92759d6b6/db6is8m-065c1dbf-d125-4729-a015-f79553c16bf9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU4ZDNjMDUxLTYyYTAtNDQ3MS04MThiLWI5YjkyNzU5ZDZiNlwvZGI2aXM4bS0wNjVjMWRiZi1kMTI1LTQ3MjktYTAxNS1mNzk1NTNjMTZiZjkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SNbFKk_oSqXR_g0K2OquQKU33PDgktgkNc40-6Pjhqo);
+  background-size: cover;
+}
+
+.circle6 {
+  background-image: url(https://preview.free3d.com/img/2017/09/2279484564457915925/m39quu41-900.jpg);
+  background-size: cover;
+}
+
+.circle7 {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2115d5b9-b53e-4f1d-81e4-1d21461eeb45/dbozsk6-f27239ad-b102-465b-a86a-7a9a1c36502f.jpg/v1/fill/w_1268,h_630,q_70,strp/map_of_planet_neptune__mixed__texture_for_celestia_by_roanalcorano_dbozsk6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ4OSIsInBhdGgiOiJcL2ZcLzIxMTVkNWI5LWI1M2UtNGYxZC04MWU0LTFkMjE0NjFlZWI0NVwvZGJvenNrNi1mMjcyMzlhZC1iMTAyLTQ2NWItYTg2YS03YTlhMWMzNjUwMmYuanBnIiwid2lkdGgiOiI8PTI5OTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ciij6VjDZV-EJomm5-12wv52ycu-cV0roNjK8Zy1EUU);
+  background-size: cover;
+}
+
+
